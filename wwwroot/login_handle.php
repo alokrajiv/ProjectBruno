@@ -17,7 +17,11 @@
             session_destroy();
         }
         session_start();
-        $_SESSION['cached_users_data']['username']= $candidate_username;
+        $_SESSION['cached_user_data']['username']= $candidate_username;
+        $_SESSION['cached_user_data']['role']= $res['role'];
+        if($res['role']==='SALES'){
+            header("Location: /sales/");
+        }
     } else {
         echo 'Invalid password.';
     }

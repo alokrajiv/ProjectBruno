@@ -10,7 +10,3 @@ foreach ($files_to_load as $file_path) {
     require_once __DIR__.'/'.$file_path;
 }
 
-
-
-
-echo "AUTO-LOAD COMPLETE."; 
