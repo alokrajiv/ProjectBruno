@@ -17,31 +17,31 @@
             <td>
                <div align="right">Company Name</div>
             </td>
-            <td><input name="comp" type="text" /></td>
+            <td><input name="company_name" type="text" /></td>
          </tr>
          <tr>
             <td>
                <div align="right">Company Phone Number</div>
             </td>
-            <td><input name="phno" type="text" /></td>
+            <td><input name="phone_no" type="text" /></td>
          </tr>
          <tr>
             <td>
                <div align="right">Company Fax Number</div>
             </td>
-            <td><input name="faxnumber" type="text" /></td>
+            <td><input name="fax_no" type="text" /></td>
          </tr>
          <tr>
             <td>
                <div align="right">Company Email</div>
             </td>
-            <td><input name="faxnumber" type="text" /></td>
+            <td><input name="email" type="text" /></td>
          </tr>
          <tr>
             <td>
                <div align="right">Company Address</div>
             </td>
-            <td><input name="compaddress" type="text" /></td>
+            <td><input name="address" type="text" /></td>
          </tr>
          <tr>
             <td width="115">

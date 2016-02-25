@@ -11,6 +11,8 @@
 	<head>
 		<center>LOGIN</center>
 	</head>
+        <br>
+        <center><a href="register.php">REGISTER LINK</a></center>
 	<br><br>
 	<form name="loginform" action="login_handle.php" method="post">
 		<table width="300" border="0" align="center" cellpadding="2" cellspacing="5">
