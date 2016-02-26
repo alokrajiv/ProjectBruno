@@ -4,7 +4,7 @@
    </title>
    <h1>
       <center>
-         COMPANY NAME
+         COMPANY NAME..
       </center>
    </h1>
    <head>
@@ -17,31 +17,31 @@
             <td>
                <div align="right">Company Name</div>
             </td>
-            <td><input name="company_name" type="text" /></td>
+            <td><input name="compname" type="text" /></td>
          </tr>
          <tr>
             <td>
                <div align="right">Company Phone Number</div>
             </td>
-            <td><input name="phone_no" type="text" /></td>
+            <td><input name="phno" type="text" /></td>
          </tr>
          <tr>
             <td>
                <div align="right">Company Fax Number</div>
             </td>
-            <td><input name="fax_no" type="text" /></td>
+            <td><input name="faxnumber" type="text" /></td>
          </tr>
          <tr>
             <td>
                <div align="right">Company Email</div>
             </td>
-            <td><input name="email" type="text" /></td>
+            <td><input name="compemail" type="text" /></td>
          </tr>
          <tr>
             <td>
                <div align="right">Company Address</div>
             </td>
-            <td><input name="address" type="text" /></td>
+            <td><input name="compaddress" type="text" /></td>
          </tr>
          <tr>
             <td width="115">
@@ -71,7 +71,8 @@
                 <br>Name:<input name="poc['+sno+'][name]">\
                 <br>Designation: <input name="poc['+sno+'][designation]">\
                 <br>Email: <input name="poc['+sno+'][email]" type="text" >\
-                <br>Phone: <input name="poc['+sno+'][contact]" type="text">\
+                <br>Mobile No: <input name="poc['+sno+'][mobile_no]" type="text">\
+                <br>Office No: <input name="poc['+sno+'][office_no]" type="text">\
                 <br><br><br>\
                </span>\
           ';
