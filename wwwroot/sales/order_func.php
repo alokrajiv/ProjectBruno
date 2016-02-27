@@ -62,4 +62,27 @@ function getColors($inventory_id){
     return $results;
 }
 
+
+/**
+* Inserts data into order_main table
+* @param $data - refers to the data to be inserted into the db
+* @return - void
+*/
+
+function insertOrder($data){
+    global $dbConn;
+    
+    $dbConn->beginTransaction();
+
+    $query = "INSERT INTO `order_main` (client_id, request_user, inventory_id, color_id, width_id, material_id) VALUES (?, ?, ?, ?, ?, ?)";
+
+    $stmt = $dbConn->prepare($query);
+
+    $stmt->execute(array($data['client_id'], $_SESSION['cached_user_data']['user_id'], $data['inventory_id'],$data['search_item_color'],$data['search_item_width'],$data['search_item_material']));
+
+    // commit
+    $dbConn->commit();
+
+}
+
 ?>
