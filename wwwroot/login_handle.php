@@ -16,6 +16,7 @@
             session_destroy();
         }
         session_start();
+        $_SESSION['cached_user_data']['user_id']= $res['user_id'];
         $_SESSION['cached_user_data']['username']= $candidate_username;
         $_SESSION['cached_user_data']['role']= $res['role'];
         if($res['role']==='SALES'){

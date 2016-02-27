@@ -1,7 +1,7 @@
 <?php
 
 require_once $_SERVER["DOCUMENT_ROOT"].'/../core/autoload.php';
-
+session_start();
 // Fetch values from POST
 
 $company_name = $_POST['compname'];
@@ -15,11 +15,11 @@ $point_of_contacts = $_POST['poc'];
 // Insert values into client_details
 $dbConn->beginTransaction();
 
-$query = "INSERT INTO client_details (company_name, phone_no, fax_no, email, address, owner) VALUES (?, ?, ?, ?, ?, ?)";
+$query = "INSERT INTO client_details (company_name, sales_relation_id, phone_no, fax_no, email, address, owner) VALUES (?, ?, ?, ?, ?, ?, ?)";
 
 $stmt = $dbConn->prepare($query);
 
-$stmt->execute(array($company_name, $company_phone_no, $company_fax_no, $company_email, $company_address, $owner));
+$stmt->execute(array($company_name, $_SESSION['cached_user_data']['user_id'], $company_phone_no, $company_fax_no, $company_email, $company_address, $owner));
 
 
 // If the insert was successful
@@ -49,4 +49,4 @@ else
 // commit
 $dbConn->commit();
 
-var_dump($_POST);
+header('Location: /sales/');
