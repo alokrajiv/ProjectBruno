@@ -1,0 +1,29 @@
+.main-heading{
+	font-size:300%;
+}
+.jumbotron-custom {
+    padding-top: 10%;
+    padding-bottom: 0%;
+}
+.register-link{
+	margin-right:5%;
+}
+hr{
+	border-top: 1px solid #333;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.jumbotron-parallax{
+	z-index: 2;
+}
+.add-button{
+	margin-right:2%;
+}
+.remove-button{
+	margin-left:2%;
+}
+.submit-button{
+	margin-top:3%;
+	margin-right:3%;
+}
