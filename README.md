@@ -1,1 +1,1 @@
-# projectbruno `MAIN DEVELOPMENT BRNACH`
+# projectbruno `MAIN BRANCH (currently DEVELOPMENT)`
