@@ -90,14 +90,38 @@
          
          function templater(sno){
              var template = '\
-                  <span class="poc">\
-                <br>PERSON '+sno+'\
-                <br>Name:<input name="poc['+sno+'][name]">\
-                <br>Designation: <input name="poc['+sno+'][designation]">\
-                <br>Email: <input name="poc['+sno+'][email]" type="text" >\
-                <br>Mobile No: <input name="poc['+sno+'][mobile]" type="text">\
-                <br>Office No: <input name="poc['+sno+'][office]" type="text">\
-                <br><br><br>\
+                      <span class="poc">\
+                      <h4 class="text-center">Person '+sno+'</h4>\
+                                  <div class="form-group">\
+              <label class="control-label col-sm-3 col-sm-offset-1 col-xs-3 col-xs-offset-1 col-lg-3 col-lg-offset-1" for="poc['+sno+'][name]">Name</label>\
+                <div class="col-sm-6 col-xs-6 col-lg-6">\
+                  <input type="text" class="form-control" placeholder="Enter Person\'s Name" name="poc['+sno+'][name]">\
+                </div>\
+            </div>\
+            <div class="form-group">\
+              <label class="control-label col-sm-3 col-sm-offset-1 col-xs-3 col-xs-offset-1 col-lg-3 col-lg-offset-1" for="poc['+sno+'][designation]">Designation</label>\
+                <div class="col-sm-6 col-xs-6 col-lg-6">\
+                  <input type="text" class="form-control" placeholder="Enter Person\'s Designation" name="poc['+sno+'][designation]">\
+                </div>\
+            </div>\
+            <div class="form-group">\
+              <label class="control-label col-sm-3 col-sm-offset-1 col-xs-3 col-xs-offset-1 col-lg-3 col-lg-offset-1" for="poc['+sno+'][email]">Email</label>\
+                <div class="col-sm-6 col-xs-6 col-lg-6">\
+                  <input type="text" class="form-control" placeholder="Enter Person\'s Email" name="poc['+sno+'][email]">\
+                </div>\
+            </div>\
+            <div class="form-group">\
+              <label class="control-label col-sm-3 col-sm-offset-1 col-xs-3 col-xs-offset-1 col-lg-3 col-lg-offset-1" for="poc['+sno+'][mobile]">Mobile No.</label>\
+                <div class="col-sm-6 col-xs-6 col-lg-6">\
+                  <input type="text" class="form-control" placeholder="Enter Person\'s Mobile No." name="poc['+sno+'][mobile]">\
+                </div>\
+            </div>\
+            <div class="form-group">\
+              <label class="control-label col-sm-3 col-sm-offset-1 col-xs-3 col-xs-offset-1 col-lg-3 col-lg-offset-1" for="poc['+sno+'][office]">Office No.</label>\
+                <div class="col-sm-6 col-xs-6 col-lg-6">\
+                  <input type="text" class="form-control" placeholder="Enter Person\'s Office Phone No." name="poc['+sno+'][office]">\
+                </div>\
+            </div>\
                </span>\
           ';
           return template;
