@@ -49,4 +49,4 @@ else
 // commit
 $dbConn->commit();
 
-header('Location: /sales/');
+header('Location: /sales/?success_messg=Success%21&success_note=Requested+add+client+to+your+account%21%21');

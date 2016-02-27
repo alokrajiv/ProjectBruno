@@ -50,7 +50,7 @@
 				<button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
 			</form>-->
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="http://www.pingpong-labs.com" target="_blank">Visit Site</a></li>
+				<li><a href="/" target="_blank">Visit Site</a></li>
 				<li class="dropdown ">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
 						<?= $_SESSION['cached_user_data']['username']?>
@@ -125,7 +125,38 @@
 	</div>
 </div>  		</div>
   		<div class="col-md-10 content">
+                                
+                    <?php
+                    
+                    //1 error,success,info and warning each can passed in GET url to be dispalyed as bootstrap alerts on the dash specifically for redirects after wizards.
+                    
+                    if(isset($_GET['error_messg'])&&isset($_GET['error_note'])){ ?>
+                              <div class="alert alert-danger alert-dismissible" role="alert">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <strong><?=$_GET['error_messg']?></strong> <?=$_GET['error_note']?>
+                              </div>
+                    <?php } 
+                    if(isset($_GET['success_messg'])&&isset($_GET['success_note'])){ ?>
+                              <div class="alert alert-success alert-dismissible" role="alert">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <strong><?=$_GET['success_messg']?></strong> <?=$_GET['success_note']?>
+                              </div>
+                    <?php } 
+                    if(isset($_GET['info_messg'])&&isset($_GET['info_note'])){ ?>
+                              <div class="alert alert-info alert-dismissible" role="alert">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <strong><?=$_GET['info_messg']?></strong> <?=$_GET['info_note']?>
+                              </div>
+                    <?php }
+                    if(isset($_GET['warn_messg'])&&isset($_GET['warn_note'])){ ?>
+                              <div class="alert alert-warning alert-dismissible" role="alert">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <strong><?=$_GET['warn_messg']?></strong> <?=$_GET['warn_note']?>
+                              </div>
+                    <?php } ?> 
+                    
   			  <div class="panel panel-default">
+                              
 	<div class="panel-heading">
 		Welcome <?= $_SESSION['cached_user_data']['username']?>
 	</div>
