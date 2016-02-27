@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <h1 class="text-center main-heading">Company Name</h1>
 <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>JS Bin</title>
+  <title>Place Order</title>
 </head>
 <body>
-<select id="search_item_box">
+  <form name="orderform" action="order_step2.php" method="post">
+  Select the item:
+<select id="search_item_box" name="selected_order_inventory_item">
 </select>
+<br><br>
 </body>
 <script>
 $(function(){
   
   $.getJSON("/api/inventory_main.php", function(arr){
         function templater(id, name){
-            return "<option id='"+id+"'>"+name+"</option>";
+            return "<option value='"+id+"'>"+name+"</option>";
           }
 
           for(var i=0;i<arr.length;i++){
@@ -27,4 +31,6 @@ $(function(){
   
 });
 </script>
+<input name="" type="submit" value="SUBMIT" />
+</form>
 </html>
