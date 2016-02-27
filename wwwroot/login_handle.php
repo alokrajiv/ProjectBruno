@@ -12,7 +12,6 @@
     $res = $sth->fetch();
     $passwordHash = $res["pswrd_hash"];
     if (password_verify($candidate_password, $passwordHash)) {
-        echo 'Password is valid!';
         if (!(session_status() == PHP_SESSION_NONE)) {
             session_destroy();
         }
