@@ -4,10 +4,15 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/Users/alokrajiv/Documents/AlokDevelopmentFolder/ProjectBruno/dev/ProjectBruno/wwwroot/sales/addclient_handle.php</file>
-            <file>file:/Users/alokrajiv/Documents/AlokDevelopmentFolder/ProjectBruno/dev/ProjectBruno/models/index.php</file>
+            <file>file:/Users/alokrajiv/Documents/AlokDevelopmentFolder/ProjectBruno/dev/ProjectBruno/wwwroot/sales/viewclients.php</file>
+            <file>file:/Users/alokrajiv/Documents/AlokDevelopmentFolder/ProjectBruno/dev/ProjectBruno/wwwroot/api/inventory_main.php</file>
+            <file>file:/Users/alokrajiv/Documents/AlokDevelopmentFolder/ProjectBruno/dev/ProjectBruno/wwwroot/sales/order_func.php</file>
             <file>file:/Users/alokrajiv/Documents/AlokDevelopmentFolder/ProjectBruno/dev/ProjectBruno/core/db-conn.php</file>
+            <file>file:/Users/alokrajiv/Documents/AlokDevelopmentFolder/ProjectBruno/dev/ProjectBruno/wwwroot/login_handle.php</file>
             <file>file:/Users/alokrajiv/Documents/AlokDevelopmentFolder/ProjectBruno/dev/ProjectBruno/core/config.php</file>
-            <file>file:/Users/alokrajiv/Documents/AlokDevelopmentFolder/ProjectBruno/dev/ProjectBruno/models/clients.php</file>
+            <file>file:/Users/alokrajiv/Documents/AlokDevelopmentFolder/ProjectBruno/dev/ProjectBruno/wwwroot/sales/order_step1.php</file>
+            <file>file:/Users/alokrajiv/Documents/AlokDevelopmentFolder/ProjectBruno/dev/ProjectBruno/wwwroot/sales/index.php</file>
+            <file>file:/Users/alokrajiv/Documents/AlokDevelopmentFolder/ProjectBruno/dev/ProjectBruno/wwwroot/sales/order_handle.php</file>
         </group>
     </open-files>
 </project-private>

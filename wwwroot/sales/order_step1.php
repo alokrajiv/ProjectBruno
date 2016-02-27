@@ -9,11 +9,13 @@
 </head>
 <body>
   <form name="orderform" action="order_step2.php" method="post">
+      <input type="hidden" name="client_id" value="<?=$_POST['client_id']?>">
   Select the item:
 <select id="search_item_box" name="selected_order_inventory_item">
 </select>
 <br><br>
-</body>
+<input name="" type="submit" value="SUBMIT" />
+</form>
 <script>
 $(function(){
   
@@ -31,6 +33,5 @@ $(function(){
   
 });
 </script>
-<input name="" type="submit" value="SUBMIT" />
-</form>
+</body>
 </html>

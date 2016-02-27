@@ -15,6 +15,8 @@
   			<title>Place Order</title>
   		</head>
       <form name="orderform2" action="order_handle.php" method="post">
+          <input type="hidden" name="client_id" value="<?=$_POST['client_id']?>">
+          <input type="hidden" name="inventory_id" value="<?=$inventory_item_id?>">
       Select the color:
       <select name="search_item_color">
       <?php
@@ -49,8 +51,7 @@ Select the material:
         </select>
 
       <br><br>
+<input name="" type="submit" value="SUBMIT" />
     </form>
 </body>
-<input name="" type="submit" value="SUBMIT" />
-</form>
 </html>
